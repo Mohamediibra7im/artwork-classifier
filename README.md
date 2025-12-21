@@ -1,5 +1,5 @@
 
-# Artwork Classification Project
+# Artwork Classification Project.
 
 - This project builds a system that classifies artwork images using deep learning.  
 - It uses CNNs and transfer learning.  
