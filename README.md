@@ -9,23 +9,6 @@ An advanced **Deep Learning system** for classifying artworks into different art
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Models](#models)
-- [Dataset](#dataset)
-- [Results](#results)
-- [Usage](#usage)
-- [Team](#team)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 🎯 Overview
 
 This project implements a complete **artwork classification system** as part of the AI Skills course. We train and compare **4 different CNN architectures** (VGG16, ResNet50, EfficientNet-B1, Swin Transformer) on the WikiArt dataset to classify artworks into 5 major art styles.
