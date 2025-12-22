@@ -507,7 +507,7 @@ with tab5:
 
     st.markdown(
         """
-    ### Team Mohammed - AI Skills Project 2025
+    ### AI Skills Project Team 2025
     
     This project was developed collaboratively by a team of 6 members, each contributing 
     to different aspects of the system.

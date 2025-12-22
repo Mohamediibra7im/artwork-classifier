@@ -377,17 +377,34 @@ def main():
     with col1:
         st.header("📤 Upload Image")
 
-        # File uploader
-        uploaded_file = st.file_uploader(
-            "Choose an artwork image...",
-            type=["jpg", "jpeg", "png"],
-            help="Upload a clear image of an artwork",
+        # Input method selection
+        input_method = st.radio(
+            "Select input method:",
+            ["📁 Upload File", "📷 Use Webcam", "🖼️ Sample Image"],
+            horizontal=True,
+            help="Choose how to provide the artwork image",
         )
 
-        # Sample images option
-        use_sample = st.checkbox("Or use a sample image from test set")
+        uploaded_file = None
 
-        if use_sample:
+        if input_method == "📁 Upload File":
+            # File uploader
+            uploaded_file = st.file_uploader(
+                "Choose an artwork image...",
+                type=["jpg", "jpeg", "png"],
+                help="Upload a clear image of an artwork",
+            )
+
+        elif input_method == "📷 Use Webcam":
+            # Webcam input
+            camera_image = st.camera_input(
+                "Take a picture of the artwork",
+                help="Position the artwork in front of your camera and click to capture",
+            )
+            if camera_image is not None:
+                uploaded_file = camera_image
+
+        else:  # Sample Image
             import os
 
             test_images_dir = "test_images/test_images"
@@ -397,9 +414,16 @@ def main():
                     for f in os.listdir(test_images_dir)
                     if f.endswith((".jpg", ".jpeg", ".png"))
                 ]
-                selected_sample = st.selectbox("Select a sample image:", sample_images)
-                if selected_sample:
-                    uploaded_file = os.path.join(test_images_dir, selected_sample)
+                if sample_images:
+                    selected_sample = st.selectbox(
+                        "Select a sample image:", sample_images
+                    )
+                    if selected_sample:
+                        uploaded_file = os.path.join(test_images_dir, selected_sample)
+                else:
+                    st.warning("No sample images found in the test_images directory.")
+            else:
+                st.warning("Test images directory not found.")
 
     with col2:
         st.header("🔍 Results")
