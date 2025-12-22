@@ -277,14 +277,14 @@ print(f"Predicted class: {predicted_class}")
 
 **Team Mohammed** - AI Skills Project 2025
 
-| Name                 | Role                  | Contributions                         |
-| -------------------- | --------------------- | ------------------------------------- |
-| **Mohammed Ibrahim** | Project Lead          | Architecture design, Model building   |
-| **Mohammed Elfouly** | Data Engineer         | Data preprocessing, Augmentation      |
-| **Mohammed Ashraf**  | ML Engineer           | Model training, Hyperparameter tuning |
-| **Mohammed Mohsen**  | Evaluation Specialist | Metrics, Visualization, Grad-CAM      |
-| **Sarah Mahmoud**    | Frontend Developer    | GUI development, Streamlit app        |
-| **Rahma Nasser**     | Documentation Lead    | README, Reports, GitHub management    |
+| Name                 |
+| -------------------- |
+| **Mohammed Ibrahim** |
+| **Mohammed Elfouly** |
+| **Mohammed Ashraf**  |
+| **Mohammed Mohsen**  |
+| **Sarah Mahmoud**    |
+| **Rahma Nasser**     |
 
 ---
 
