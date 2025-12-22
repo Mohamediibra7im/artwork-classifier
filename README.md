@@ -7,8 +7,6 @@
 
 An advanced **Deep Learning system** for classifying artworks into different art styles using state-of-the-art CNN architectures and Transfer Learning. This project includes a comprehensive **Streamlit web application** with Grad-CAM visualizations, model comparison tools, and multi-task learning capabilities.
 
-![Artwork Classification Demo](docs/demo.png)
-
 ---
 
 ## 📋 Table of Contents
@@ -337,7 +335,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
 
 **⭐ If you found this project helpful, please give it a star! ⭐**
-
-Made with ❤️ by Team Mohammed
 
 </div>
