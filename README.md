@@ -256,7 +256,7 @@ print(f"Predicted class: {predicted_class}")
 
 ## 👥 Team
 
-**Team Mohammed** - AI Skills Project 2025
+**AI Skills Project Team 2025**
 
 | Name                 |
 | -------------------- |
